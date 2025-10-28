@@ -1,3 +1,1 @@
-
-console.log("hello backend");
-process.exit(0);
+console.log('hello backend');

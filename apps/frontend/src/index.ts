@@ -1,1 +1,1 @@
-console.log("hello frontend");
+console.log('hello frontend');
