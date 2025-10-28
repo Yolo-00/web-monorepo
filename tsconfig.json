@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 编译后 JS 的目标版本，推荐用 ESNext 以支持最新语法
+    "module": "ESNext", // 使用的模块系统，前端常用 ESNext 或 ES6
+    "moduleResolution": "Node", // 模块解析方式，Node 兼容 npm 包查找
+    "strict": true, // 开启所有严格类型检查
+    "jsx": "react-jsx", // 如果用 React，推荐用 react-jsx（新版 JSX 转换）
+    "esModuleInterop": true, // 允许默认导入 CommonJS 模块
+    "skipLibCheck": true, // 跳过库文件类型检查，加快编译速度
+    "forceConsistentCasingInFileNames": true, // 文件名大小写必须一致
+    "outDir": "dist", // 编译输出目录
+    "sourceMap": true, // 生成 source map 方便调试
+    "resolveJsonModule": true, // 支持导入 JSON 文件
+    "allowSyntheticDefaultImports": true, // 允许默认导入非 ES 模块
+    "baseUrl": ".", // 以项目根目录为基础路径
+    "paths": {
+      "@ui/*": ["packages/ui/src/*"], // monorepo 内部包路径映射示例
+      "@utils/*": ["packages/utils/src/*"]
+    }
+  },
+  "include": ["apps/*/src", "packages/*/src", "docs/**/*"], // 编译所有子包和应用的 src 目录
+  "exclude": ["node_modules", "dist", "**/dist", "**/node_modules"] // 排除所有 node_modules 和 dist
+}
