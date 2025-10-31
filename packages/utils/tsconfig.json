@@ -1,7 +1,7 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "declaration": true, // 生成 .d.ts 类型声明文件
-    "declarationDir": "types" // 类型声明文件输出目录
-  }
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"declaration": true, // 生成 .d.ts 类型声明文件
+		"declarationDir": "types" // 类型声明文件输出目录
+	}
 }
